@@ -12,6 +12,7 @@ html{
 body {
     background: black;
     color: #fff;
+    font-family: futura;
 }
 
 #header {
@@ -413,13 +414,12 @@ nav .fas {
     }
 
     .header-text {
-        /* position: fixed; */
-        margin-top: 125% !important;
+        position: relative;
+        /* margin-top: 160% !important; */
         font-size: 16px !important;
         color: slategray;
         font-weight: 700 !important;
-        /* text-shadow: 10px #131312 !important; */
-        /* text-decoration:#131312 !important; */
+        top: 57vh !important;
         
     }
     
@@ -428,7 +428,7 @@ nav .fas {
         color: rgb(248, 207, 131);
         padding-bottom: 0;
         margin-bottom: 0;
-        margin-top: 415px;
+        /* margin-top: 415px; */
     }
 
     .header-text p{
