@@ -1,6 +1,4 @@
-// import './App.css';
-import About from './components/About';
-import Navbar from './components/Navbar';
+import './App.css';
 
 function App() {
   return (
