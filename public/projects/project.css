@@ -95,10 +95,10 @@ body {
 
 @media only screen and (max-width: 600px) {
 
-.sub-title {
+.project-col-2 h1{
     font-size: 40px;
     margin-top: 30px !important;
-    padding-top: 40px !important;
+    /* padding-top: 40px !important; */
 }
 
 #project {
