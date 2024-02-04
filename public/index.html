@@ -1,43 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+ <script src="https://kit.fontawesome.com/a9aa5abc13.js" crossorigin="anonymous"></script>
+</head>
+<body onscroll="closemenu()">
+  <div id="root"></div>
+  <div id="header">
+    <div class="container">
+      <div class="head">
+        <!-- <h1><span class="highlight">C</span>HAITANYA <span class="abcd"><span class="highlight">K</span>UMAR</span></h1> -->
+        <h1><span class="highlight"></span><span class="abcd"><img src="./logo.png" class="logo" /><span class="highlight"></span></span></h1>
+        
+        <!-- <span class="highlight"></span> -->
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+        <nav>
+          <ul id="sidemenu">
+            <li><a href="#header" onclick="closemenu()">HOME</a></li>
+            <li><a href="#about" onclick="closemenu()">ABOUT</a></li>
+            <li><a href="#portfolio" onclick="closemenu()">MY WORK</a></li>
+            <li><a href="#contact" onclick="closemenu()">CONTACT</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+      <div class="header-text">
+        <h1 >Hi,<br/> I'm <span>Chaitanya Kumar</span></h1>
+        <p >FRONTEND DEVELOPER</p>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------------------------------ABOUT------------------------------------------------------------------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="./about.jpeg" class="about-img" alt="About Image"/>
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About <span class="highlight">M</span>e</h1>
+          <p>I have built many industry grade projects from scratch 
+            and am armed with many technological skills useful for tech projects. 
+            Check out my details below</p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><i class="fa-solid fa-circle-half-stroke" style="color: #ed901e;"></i> HTML</li>
+                <li><i class="fa-solid fa-circle-half-stroke" style="color: #ed901e;"></i> CSS</li>
+                <li><i class="fa-solid fa-circle-half-stroke" style="color: #ed901e;"></i> JavaScript</li>
+                <li><i class="fa-solid fa-circle-half-stroke" style="color: #ed901e;"></i> React JS</li>
+                <li><i class="fa-solid fa-circle-half-stroke" style="color: #ed901e;"></i> Bootstrap</li>
+                <li><i class="fa-solid fa-circle-half-stroke" style="color: #ed901e;"></i> Rest</li>
+                <li><i class="fa-solid fa-circle-half-stroke" style="color: #ed901e;"></i> Git</li>
+                <li><i class="fa-solid fa-circle-half-stroke" style="color: #ed901e;"></i> Postman</li>
+              </ul>
+            </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2017 - 2021</span><br />Bachelor of Engineering ( EEE )<br /> Peri Institute of Technology</li>
+                <li><span>2015 - 2017</span><br />Intermediate ( PCM ) <br />Sri Gayatri Junior College</li>
+                <li><span>2015</span><br />SSC from Narayana Concept School</li>
+              </ul>
+            </div>
+
+            
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------------------mywork----------------------------------------------------------- -->
+  <div id="portfolio">
+    <div class="containe">
+      <h1 class="sub-title" style="margin-top: 100px;">My <span class="highlight">W</span>ork</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="./qtify.jpg" class="work-img"/>
+          <div class="layer">
+            <h2>QTify</h2>
+            <p>A Music Application</p>
+            <a href="./projects/project1.html" ><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./qkart.jpg" class="work-img"/>
+          <div class="layer">
+            <h2>QKart</h2>
+            <p>A Place for all your Shopping</p>
+            <a href="./projects/project2.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./qtrip.jpg" class="work-img"/>
+          <div class="layer">
+            <h2>QTrip</h2>
+            <p>Live at your Favourite Destination</p>
+            <a href="./projects/project3.html"><i class="fas fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="./worklist.html" class="btn">See More</a>
+    </div>
+  </div>
+  <!-- --------------------------------------------CONTACT--------------------------------------------------------------------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact <span class="highlight">M</span>e</h1>
+          <p><i class="fa-solid fa-envelope"></i>chaithunani5@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i>8790699260</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/chaithanya.kumar.94402?sfnsn=wiwspwa&mibextid=RUbZ1f" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://x.com/Chaithu2609?t=L29aH3MmxLjJWl73Pt3_fQ&s=08" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/chaithu2609?igsh=anpqczVyZXV5aG5o" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/chaitanya-kumar-123a38183?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/annemchaitanyakumar" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="./Annem Chaitanya Kumar Resume.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="submit-msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p> © 2024 Chaitanya Kumar. All Rights Reserved.</p>
+    </div>
+  </div>
+
+<script>
+  let tablinks = document.getElementsByClassName("tab-links")
+  let tabcontents = document.getElementsByClassName("tab-contents")
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+  }
+</script>
+<script>
+  let sidemenu = document.getElementById("sidemenu");
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx-NXR_0u3KPIbx79DjCnLzAQmjokIMMrwuMRxAYN0sTq9wClP28agjO5UolHY4v2_-/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("submit-msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent Successfully !!"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
 </html>
