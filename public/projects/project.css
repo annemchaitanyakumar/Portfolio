@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 2px;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    padding: 10px 5%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+    color: #fff;
+}
+
+.project-img {
+    width: 100%;
+    height: 70vh;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    box-shadow: 0px 00px 5px 12px;
+}
+
+#project {
+    padding: 80px 0;
+    width: 100%;
+    height: 100vh;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-col-1 {
+    flex-basis: 40%;
+}
+
+.project-col-2 {
+    /* padding-top: 30px; */
+    flex-basis: 55%;
+}
+
+.project-col-2 p{
+    padding-top: 10px;
+    font-size: 22.5px;
+    font-weight: 600;
+}
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.firstletter{
+    color: #ed901e;
+}
+.skills{
+    padding-top: 20px;
+    color: #ed901e;
+    font-weight: 600;
+}
+
+.project-col-2 ul{
+    padding-top: 10px;
+    font-size: 22.5px;
+    font-weight: 600;
+}
+
+.project-col-2 a{
+    font-size: 25px;
+    text-decoration: none;
+    background-color: #ed901e;
+    color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+    /* top: 8%; */
+    display: inline-block;
+}
+/* .skills-list {
+    margin-top: 20px;fixed
+} */
+
+.skills-list a {
+    /* display: block; */
+    margin-top: 10px;
+}  
+
+
+@media only screen and (max-width: 600px) {
+
+.project-col-2 h1{
+    font-size: 40px;
+    margin-top: 30px !important;
+    /* padding-top: 40px !important; */
+}
+
+#project {
+    padding: 15px;
+}
+
+.project-img {
+    height: 100%;
+    top: 0;
+    padding: 20px;
+    /* margin: 10px; */
+    box-shadow: 0px 00px 5px 12px;
+}
+
+.project-col-1, .project-col-2 {
+    flex-basis: 100%;
+}
+/* .project-col-1{
+    margin-bottom: 50px;
+} */
+
+.project-col-2 {
+    font-size: 14px;
+    /* padding: 0; */
+}
+
+.project-col-2 p{
+    font-size: 18px;
+}
+
+.project-col-2 ul{
+    padding-top: 10px;
+    font-size: 18px;
+    /* font-weight: 600; */
+}
+
+}
